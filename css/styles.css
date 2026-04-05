@@ -117,23 +117,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  position: relative; /* для ::after */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
-}
-
-/* Базовий стиль для всіх посилань у навігації */
-.nav-link {
-  position: relative; /* Обов'язково для ::after */
-  color: #2e2f42;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  padding: 24px 0;
-  display: block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link.current {
